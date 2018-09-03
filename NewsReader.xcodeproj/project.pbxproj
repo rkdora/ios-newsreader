@@ -13,6 +13,7 @@
 		B22B488F213CD87B00D21E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22B488D213CD87B00D21E1B /* LaunchScreen.storyboard */; };
 		B22B489C213D0FDF00D21E1B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22B489B213D0FDF00D21E1B /* WebKit.framework */; };
 		B22B48A0213D15D000D21E1B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B489F213D15D000D21E1B /* ListViewController.swift */; };
+		B22B48A2213D195500D21E1B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B48A1213D195500D21E1B /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B22B4890213CD87B00D21E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22B489B213D0FDF00D21E1B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B22B489F213D15D000D21E1B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B22B48A1213D195500D21E1B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				B22B4884213CD87900D21E1B /* AppDelegate.swift */,
 				B22B4888213CD87900D21E1B /* Main.storyboard */,
+				B22B48A1213D195500D21E1B /* Item.swift */,
 				B22B489F213D15D000D21E1B /* ListViewController.swift */,
 				B22B488B213CD87B00D21E1B /* Assets.xcassets */,
 				B22B488D213CD87B00D21E1B /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B22B4885213CD87900D21E1B /* AppDelegate.swift in Sources */,
+				B22B48A2213D195500D21E1B /* Item.swift in Sources */,
 				B22B48A0213D15D000D21E1B /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
