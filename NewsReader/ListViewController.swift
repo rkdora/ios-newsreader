@@ -32,8 +32,13 @@ class ListViewController : UITableViewController, XMLParserDelegate {
     
     func startDownload() {
         self.items = []
-        if let url = URL(
-            string: "https://jp.techcrunch.com/feed/"){
+        
+        let testUrl = ["ニュース": "https://jp.techcrunch.com/feed/",
+                       "スポーツ": "https://news.yahoo.co.jp/pickup/sports/rss.xml",
+                       "エンタメ": "https://news.yahoo.co.jp/pickup/entertainment/rss.xml",
+                       "IT": "https://news.yahoo.co.jp/pickup/computer/rss.xml"]
+        print((parent as? TabViewController)?.tabName)
+        if let url = URL(string: testUrl[(parent as! TabViewController).tabName.title!]!){
             if let parser = XMLParser(contentsOf: url) {
                 self.parser = parser
                 self.parser.delegate = self
