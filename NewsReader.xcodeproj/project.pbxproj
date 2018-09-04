@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23378EC8C141B86520094BD4 /* Pods_NewsReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E843B2FD8AB7A74C40B97EB /* Pods_NewsReader.framework */; };
+		23378EC8C141B86520094BD4 /* Pods_NewsReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E843B2FD8AB7A74C40B97EB /* Pods_NewsReader.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B22B4885213CD87900D21E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B4884213CD87900D21E1B /* AppDelegate.swift */; };
 		B22B488A213CD87900D21E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22B4888213CD87900D21E1B /* Main.storyboard */; };
 		B22B488C213CD87B00D21E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22B488B213CD87B00D21E1B /* Assets.xcassets */; };
@@ -172,15 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NewsReader/Pods-NewsReader-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
@@ -194,15 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NewsReader-checkManifestLockResult.txt",
 			);
@@ -368,6 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sample.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sample.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
