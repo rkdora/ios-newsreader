@@ -12,12 +12,21 @@ import XLPagerTabStrip
 class TabsViewController: ButtonBarPagerTabStripViewController {
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         var vcs: [UIViewController] = []
+        let tabTitle = [1: "ニュース", 2: "IT", 3: "エンタメ"]
+        for tabNum in 1...3 {
+            let table =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab") as! TabViewController
+            table.tabName = IndicatorInfo(title: tabTitle[tabNum])
+            vcs.append(table)
+        }
+        
+        /*
         let table1 =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab") as! TabViewController
         table1.tabName = "Tab1"
         vcs.append(table1)
         let table2 =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab") as! TabViewController
         table2.tabName = "Tab2"
         vcs.append(table2)
+        */
         return vcs
     }
     
