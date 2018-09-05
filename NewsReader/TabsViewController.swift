@@ -13,7 +13,7 @@ class TabsViewController: ButtonBarPagerTabStripViewController {
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         var vcs: [UIViewController] = []
         let tabTitle = [1: "ニュース", 2: "スポーツ", 3: "エンタメ",4: "IT"]
-        for tabNum in 1...4 {
+        for tabNum in 1...tabTitle.count {
             let table =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab") as! TabViewController
             table.tabName = IndicatorInfo(title: tabTitle[tabNum])
             vcs.append(table)
@@ -31,14 +31,17 @@ class TabsViewController: ButtonBarPagerTabStripViewController {
     }
     
     override func viewDidLoad() {
-        // タブの背景色
-        settings.style.buttonBarBackgroundColor = UIColor.lightGray
+        // バーの色
+        settings.style.buttonBarBackgroundColor = UIColor(red:135/255, green:206/255, blue:250/255, alpha:1)
         // タブの色
-        settings.style.buttonBarItemBackgroundColor = UIColor.lightGray
+        settings.style.buttonBarItemBackgroundColor = UIColor(red:135/255, green:206/255, blue:250/255, alpha:1)
         // タブの文字サイズ
         settings.style.buttonBarItemFont = UIFont.systemFont(ofSize: 15)
+        // タブの文字色
+        settings.style.buttonBarItemTitleColor = UIColor.black
         // カーソルの色
-        buttonBarView.selectedBar.backgroundColor = UIColor.darkGray
+        settings.style.selectedBarBackgroundColor = UIColor.red
+        
         super.viewDidLoad()
     }
 }
